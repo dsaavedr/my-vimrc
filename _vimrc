@@ -12,6 +12,11 @@ set smartcase
 set encoding=utf-8
 set wrap
 
+" Command to clear the search param
+command -nargs=* ClearSearch let @/ = ""
+" Create shorter version
+command CS ClearSearch
+
 " Use the internal diff if available.
 " Otherwise use the special 'diffexpr' for Windows.
 if &diffopt !~# 'internal'
