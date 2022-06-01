@@ -13,6 +13,11 @@ set encoding=utf-8
 set wrap
 set textwidth=200
 
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
 " Command to clear the search param
 command -nargs=* ClearSearch let @/ = ""
 " Create shorter version
