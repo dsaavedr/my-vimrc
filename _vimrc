@@ -11,6 +11,7 @@ set ignorecase
 set smartcase
 set encoding=utf-8
 set wrap
+set textwidth=200
 
 " Command to clear the search param
 command -nargs=* ClearSearch let @/ = ""
