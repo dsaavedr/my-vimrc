@@ -13,10 +13,15 @@ set encoding=utf-8
 set wrap
 set textwidth=200
 
+" Plugin configuration
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+
+let g:rainbow_active = 1
+let g:rainbow_guifgs = ['DarkOrange3', 'DarkOrchid3', 'FireBrick', 'RoyalBlue3']
+let g:rainbow_ctermfgs = ['lightblue', 'lightgreen', 'yellow', 'red', 'magenta']
 
 " Command to clear the search param
 command -nargs=* ClearSearch let @/ = ""
