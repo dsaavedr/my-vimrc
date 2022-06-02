@@ -14,10 +14,13 @@ set wrap
 set textwidth=200
 
 " Plugin configuration
+" """"""""""""""""""""""""""""""
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+
+let g:airline_theme='google_dark'
 
 let g:rainbow_active = 1
 let g:rainbow_guifgs = ['DarkOrange3', 'DarkOrchid3', 'FireBrick', 'RoyalBlue3']
@@ -27,6 +30,7 @@ let g:rainbow_ctermfgs = ['lightblue', 'lightgreen', 'yellow', 'red', 'magenta']
 command -nargs=* ClearSearch let @/ = ""
 " Create shorter version
 command CS ClearSearch
+""""""""""""""""""""""""""""""""
 
 " Use the internal diff if available.
 " Otherwise use the special 'diffexpr' for Windows.
